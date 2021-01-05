@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MyFourthApplication</string>
+    <string name="john_s_pizza_palooza">John\'s Pizza Palooza</string>
+    <string name="default_price">$3.00</string>
+    <string name="this_price_is_only_per_ounce">This price is only per ounce</string>
+    <string name="details">Details</string>
+    <string name="pick_another">Pick Another</string>
+    <string name="hint">Start By Select A Pizza</string>
+    <string name="pizza_flavor">Pizza Flavor</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="price">Price</string>
+    <string name="imageurl">ImageURL</string>
+    <string name="calories">Calories:</string>
 </resources>

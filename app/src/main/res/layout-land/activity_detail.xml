@@ -8,20 +8,18 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-55dp">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp">
+            android:layout_marginStart="@dimen/default_margin_16"
+            android:layout_marginEnd="@dimen/default_margin_16">
 
             <ImageView
                 android:id="@+id/im_pizza_flavor"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
+                android:layout_width="@dimen/image_detail_selected_150"
+                android:layout_height="@dimen/image_detail_selected_150"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -32,9 +30,9 @@
                 style="@style/GeneralPizzaFlavorDetailFont"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="Pizza Flavor"
-                android:textSize="40sp"
+                android:layout_margin="@dimen/default_margin_8"
+                android:text="@string/pizza_flavor"
+                android:textSize="@dimen/pizza_title_size_40"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/im_pizza_flavor" />
@@ -44,20 +42,20 @@
                 style="@style/GeneralPizzaDetailTitles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Ingredients:"
+                android:layout_marginStart="@dimen/default_margin_16"
+                android:text="@string/ingredients"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_pizza_flavor" />
 
             <TextView
                 android:id="@+id/tv_ingredients"
                 style="@style/GeneralPriceFont"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero_width"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/default_margin_16"
+                android:layout_marginEnd="@dimen/default_margin_16"
                 android:fontFamily="@font/crimson_text_italic"
-                android:text="Ingredients"
+                android:text="@string/ingredients"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -67,9 +65,9 @@
                 style="@style/GeneralPriceFont"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text="Price"
-                android:textSize="25sp"
+                android:layout_margin="@dimen/default_margin_16"
+                android:text="@string/price"
+                android:textSize="@dimen/pizza_price_size_25"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_ingredients" />
@@ -77,12 +75,12 @@
             <TextView
                 android:id="@+id/tv_image_url"
                 style="@style/GeneralPriceFont"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero_width"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:layout_marginBottom="9dp"
+                android:layout_margin="@dimen/default_margin_16"
+                android:layout_marginBottom="@dimen/image_margin_bottom_9dp"
                 android:fontFamily="@font/crimson_text_regular"
-                android:text="ImageURL"
+                android:text="@string/imageurl"
                 app:layout_constraintBottom_toTopOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -91,10 +89,10 @@
             <TextView
                 android:id="@+id/textView"
                 style="@style/GeneralPizzaDetailTitles"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero_width"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text="Calories:"
+                android:layout_margin="@dimen/default_margin_16"
+                android:text="@string/calories"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_image_url" />
@@ -102,18 +100,18 @@
             <TextView
                 android:id="@+id/tv_calories"
                 style="@style/GeneralPriceFont"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zero_width"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Calories"
+                android:layout_marginStart="@dimen/default_margin_16"
+                android:layout_marginEnd="@dimen/default_margin_16"
+                android:text="@string/calories"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/bottom_spacer_30"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_calories" />
 

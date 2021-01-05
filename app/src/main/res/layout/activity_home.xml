@@ -9,11 +9,11 @@
     <TextView
         android:id="@+id/tv_app_title"
         style="@style/AppTitle"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginTop="16dp"
-        android:text="App Title"
+        android:layout_margin="@dimen/default_margin_16"
+        android:layout_marginTop="@dimen/default_margin_16"
+        android:text="@string/john_s_pizza_palooza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +21,9 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="8dp"
-        android:layout_margin="16dp"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="@dimen/default_margin_8"
+        android:layout_margin="@dimen/default_margin_16"
         android:background="@color/orange_yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
 
     <ImageView
         android:id="@+id/img_bottom_border"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/zero_width"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,9 +39,9 @@
 
     <ListView
         android:id="@+id/lv_pizza_list"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="@dimen/zero_width"
+        android:layout_margin="@dimen/default_margin_16"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/GeneralPriceFont"
-        android:text="Start By Select A Pizza"
+        android:text="@string/hint"
         app:layout_constraintBottom_toBottomOf="@+id/cl_quick_detail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/cl_quick_detail"
@@ -69,9 +69,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_quick_detail"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="@dimen/zero_width"
+        android:layout_margin="@dimen/default_margin_16"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,8 +82,8 @@
 
         <ImageView
             android:id="@+id/im_pizza_image"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="@dimen/image_detail_selected_150"
+            android:layout_height="@dimen/image_detail_selected_150"
             android:src="@drawable/ic_lunik_pizza_slice_trozo_de_pizza"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -98,10 +98,10 @@
         <TextView
             android:id="@+id/tv_pizza_flavor"
             style="@style/GeneralPizzaFlavorDetailFont"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/default_margin_16"
+            android:layout_marginEnd="@dimen/default_margin_16"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/im_pizza_image"
@@ -110,10 +110,10 @@
         <TextView
             android:id="@+id/tv_pizza_price"
             style="@style/GeneralPizzaPriceDetailFont"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/default_margin_16"
+            android:layout_marginEnd="@dimen/default_margin_16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/im_pizza_image"
             app:layout_constraintTop_toTopOf="@+id/guideline3"
@@ -121,21 +121,21 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/default_margin_16"
             android:gravity="center"
-            android:text="This price is only per ounce"
+            android:text="@string/this_price_is_only_per_ounce"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/im_pizza_image" />
 
         <Button
             android:id="@+id/btn_details"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Details"
+            android:layout_margin="@dimen/default_margin_16"
+            android:text="@string/details"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

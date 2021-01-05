@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="image_size_icon">50dp</dimen>
+    <dimen name="default_margin_16">16dp</dimen>
+    <dimen name="zero_width">0dp</dimen>
+    <dimen name="default_margin_8">8dp</dimen>
+    <dimen name="image_detail_selected_150">150dp</dimen>
+    <dimen name="pizza_title_size_40">40sp</dimen>
+    <dimen name="pizza_price_size_25">25sp</dimen>
+    <dimen name="image_margin_bottom_9dp">9dp</dimen>
+    <dimen name="bottom_spacer_30">30dp</dimen>
+    <dimen name="image_size_250">250dp</dimen>
 </resources>
