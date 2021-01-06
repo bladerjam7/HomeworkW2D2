@@ -50,7 +50,6 @@ public class PizzaItemAdapter extends BaseAdapter {
 
         v.setOnClickListener(v1 -> {
             pizzaDelegate.selectPizza(item);
-            Toast.makeText(v1.getContext(), "Hello", Toast.LENGTH_SHORT).show();
         });
         TextView pizzaFlavor = v.findViewById(R.id.tv_pizza_flavor);
         TextView pizzaPrice = v.findViewById(R.id.tv_pizza_price);
